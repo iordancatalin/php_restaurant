@@ -1,0 +1,27 @@
+.galerie-container{
+	width: 90%;
+	height: 100%;
+	position: relative;
+}
+
+.absolute-image{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: black;
+}
+
+.galerie-image{
+	width: 100%;
+	height: 100%;
+	transition: transform .4s ease-out;
+}
+
+.galerie-image:hover{
+	transform: scale(1.2);
+}
+
+.galerie-image-container{
+	overflow: hidden;
+	cursor: pointer;
+}
