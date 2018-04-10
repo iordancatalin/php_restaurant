@@ -1,4 +1,4 @@
-<div id="rezervare" class="row h-100 m-0 flex-block middle-center">
+<div class="row h-100 m-0 flex-block middle-center">
 	<div class="rezervari-container">
 		<div class="header">
 			<div class="col-3 h-100 flex-block rezervari-panel">

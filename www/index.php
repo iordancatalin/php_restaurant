@@ -22,30 +22,31 @@
 				require('fragments/header.php');
 			?>
 		</div>
-		<div class="fragment-default-container acasa-container">
+		<div id="acasa" class="fragment-default-container acasa-container">
 			<?php
 				require('fragments/acasa.php');
 			?>
 		</div>
-		<div class="fragment-default-container">
+		<div id="meniu" class="fragment-default-container">
 			<?php
 				require('fragments/meniu.php');
 			?>
 		</div>
-		<div class="fragment-default-container default-back-color h-70">
+		<div id="galerie" class="fragment-default-container default-back-color h-70">
 			<?php
 				require('fragments/galerie.php');
 			?>
 		</div>
-		<div class="fragment-default-container default-back-color h-30">
+		<div id="rezervare" class="fragment-default-container default-back-color h-30">
 			<?php
 				require('fragments/rezervare.php');
 			?>			
 		</div>
-		<div class="fragment-default-container default-back-color h-50">
+		<div id="contact" class="fragment-default-container default-back-color h-50">
 			<?php
 				require('fragments/footer.php');
 			?>
 		</div>
+		<script src="js/main.js" ></script>
 	</body>
 </html>

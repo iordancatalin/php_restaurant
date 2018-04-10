@@ -25,3 +25,27 @@
 	overflow: hidden;
 	cursor: pointer;
 }
+
+.special-image-container{
+	overflow: hidden;
+	cursor: pointer;	
+}
+
+@media screen and (max-width: 800px){
+	.galerie-image-container{
+		display: none;
+	}
+
+	.galerie-container{
+		position: relative;
+		top: 2%;
+		height: 96%;
+	}
+}
+
+@media screen and (min-width: 800px){
+	.special-image-container{
+		display: none;
+	}
+	
+}

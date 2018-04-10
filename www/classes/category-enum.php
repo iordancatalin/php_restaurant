@@ -1,11 +1,8 @@
 <?php
 	
-	abstract class CategoryEnum{
-		
-		const BAUTURI = "Bauturi";
-		const APERITIVE = "Aperitive";
-		const FELUL_PRINCIPAL = "Felul Principal"; 
-		const DESERT = "Desert";
+	class Constants{
+	
+		public static $CATEGORI = array("Bauturi", "Aperitive", "Felul Principal", "Desert");
 		
 	}
 ?>

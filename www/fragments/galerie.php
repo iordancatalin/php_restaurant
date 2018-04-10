@@ -1,4 +1,4 @@
-<div id="galerie" class="row h-100 m-0 flex-block middle-center">
+<div class="row h-100 m-0 flex-block middle-center">
 	<div class="galerie-container">
 		<div class="col-2 h-50 galerie-image-container">
 			<img src="images/cake_unusual_funny_treats_dessert_93360_1920x1080.jpg" class="galerie-image" />
@@ -23,7 +23,10 @@
 		</div>			
 		<div class="col-2 h-50 galerie-image-container">
 			<img src="images/coffee_corn_cup_star_anise_cinnamon_spices_84925_1920x1080.jpg" class="galerie-image" />		
-		
-		</div>			
+		</div>
+
+		<div class="row h-100 m-0 special-image-container">
+			<img src="images/restaurant_reception_registration_fountain_room_39249_3840x2400.jpg" class="galerie-image" />
+		</div>
 	</div>
 </div>

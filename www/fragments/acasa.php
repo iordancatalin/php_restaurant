@@ -1,4 +1,4 @@
-<div id="acasa" class="row h-100 m-0 acasa-panel">
+<div class="row h-100 m-0 acasa-panel">
 	<div class="row h-100 m-0 container flex-block middle-center">
 		<div class="descriere-container">
 			<div class="row m-0 title-container">
