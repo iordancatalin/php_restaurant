@@ -1,7 +1,5 @@
 <?php 
-	
-	require('category-enum.php');
-	
+		
 	class Preparat {
 		
 		public $id;

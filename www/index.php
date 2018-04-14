@@ -1,3 +1,14 @@
+<?php
+
+	require('classes/preparat-wrapper.php');
+	require('classes/db_preparat.php');
+	require('classes/category-enum.php');
+
+	session_start();
+	
+
+?>
+
 <html>
 	<head>
 		<title>Restaurant</title>
@@ -15,8 +26,10 @@
 		<link rel="stylesheet" href="css/galerie.css" />
 		<link rel="stylesheet" href="css/rezervare.css" />
 		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/authentication.css" />		
 	</head>
 	<body>
+		<?php require('fragments/authentication.php'); ?>
 		<div class="header-container">
 			<?php
 				require('fragments/header.php');
@@ -47,6 +60,8 @@
 				require('fragments/footer.php');
 			?>
 		</div>
-		<script src="js/main.js" ></script>
+		<script src="js/meniu.js" ></script>
+		<script src="js/header.js" ></script>
+		<script src="js/authentication.js" ></script>
 	</body>
 </html>

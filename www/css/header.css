@@ -58,6 +58,12 @@
 	box-sizing: border-box;
 	margin-left: 2px;
 	position: relative;
+	overflow: hidden;
+	transition: overflow .4s ease-out;
+}
+
+.header-list-authentication .item:hover{
+	overflow: visible;
 }
 
 .header-list-authentication .item:first-of-type{
@@ -156,4 +162,139 @@
 	overflow: hidden;
 	text-align: center;
 	color: white;
+}
+
+.header-auth-container{
+	position: absolute;
+	height: 250%;
+	width: 90%;
+	background: white;
+	top: 100%;
+	left: 10%;
+	border-radius: 2px;
+}
+
+.header-auth-container::after{
+	content: '';
+	position: absolute;
+	border: 15px solid transparent;
+	top: -30px;
+	border-bottom-color: white;
+	left: 80%;
+}
+
+.user-auth-list{
+	margin: 0;
+	padding: 0;
+}
+
+.user-auth-list li{
+	width: 90%;
+	margin-left: 5%;
+	height: 30%;
+	max-height: 50px;
+	margin-top: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	color: black;
+	border-bottom: 1px solid gray;
+}
+
+.user-auth-list li:last-of-type{
+	border: 0;
+}
+
+.user-auth-list li a{
+	color: black !important;
+}
+
+.headerLoginUser{
+	cursor: pointer;
+	margin-right: 2px;
+	display: inline-flex !important;
+	width: auto !important;
+}
+
+.headerLoginUserIcon{
+	position: relative;
+	color: white;
+	margin-left: 3px;
+}
+
+.shimba-parola-container{
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.schimba-parola-panel{
+	display: block;
+	height: 35%;
+	width: 30%;
+	background: #e9ebee;
+	border-radius: 4px;
+}
+
+.schimba-parola-panel .header{
+	position: relative;
+	display: flex;
+	height: 20%;
+}
+
+.schimba-parola-panel .header button{
+	width: 15%;
+	height: 95%;
+	position: absolute;
+	max-width: 35px;
+	max-height: 35px;
+	right: 5px;
+	top: 5px;
+	border: 0;
+	background: transparent;
+	outline: none;
+}
+
+.schimba-parola-panel .body{
+	display: flex;
+	height: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.schimba-parola-panel .body input{
+	width: 70%;
+	height: 30%;
+	padding-left: 15px;
+	border-radius: 4px;
+	outline: none;
+	border: 0;
+}
+
+.schimba-parola-panel .footer{
+	height: 30%;
+}
+
+.schimba-parola-panel .footer button{
+	padding: 2%;
+	padding-left: 4%;
+	padding-right: 4%;
+	border-radius: 4px;
+	border: 0;
+	min-width: 40%;
+	background: #1976d2;
+	color: white;
+	box-shadow: 1px 1px 5px black;
+	transition: box-shadow .4s ease-out;
+}
+
+.schimba-parola-panel .footer button:hover{
+	box-shadow: 2px 2px 10px black;
 }

@@ -9,6 +9,7 @@
 		private $mysqli;
 		private $selectQuery = "SELECT ID_PREPARAT, DENUMIRE, CATEGORIE, PRET, IMAGINE_PATH FROM Preparat WHERE CATEGORIE = ? LIMIT ? OFFSET ? ;";
 		private $countQuery = "SELECT COUNT(*) as Numar FROM Preparat WHERE CATEGORIE = ? ;";
+		private $findPreparatByIdQuery = "SELECT * FROM preparat WHERE id_preparat = ? ;";
 		
 		function __construct(){
 			$this->openConnection();
@@ -78,6 +79,27 @@
 			}
 						
 			return 0;
+		}
+		
+		function findPreparatById($id){
+
+			if($statement = $this->mysqli->prepare($this->findPreparatByIdQuery)){
+				
+				$statement->bind_param("i", $id);
+				
+				$statement->execute();
+				
+				$statement->bind_result($id_preparat, $denumire, $imaginePath, $pret, $categorie);
+				
+				if($statement->fetch()){
+					
+					return new Preparat($id_preparat, $denumire, $imaginePath, $categorie, $pret);
+				}
+				
+				$statement->close();
+			}
+			
+			return null;			
 		}
 		
 		private function closeConnection(){

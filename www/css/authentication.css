@@ -1,0 +1,191 @@
+.authentication-container{
+	position: fixed;
+	left: 0;
+	top: -100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 10000;
+	transition: top .4s ease-out;
+}
+
+.login-container{
+	display: block;
+	min-width: 400px;
+	min-height: 400px;
+	height: 50%;
+	width: 35%;
+	background: #e9ebee;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.login-container .header, .registration-container .header, .parola-uitata-container .header{
+	position: relative;
+	height: 10%;
+	min-height: 40px;
+}
+
+.login-container .body{
+	height: 60%;
+}
+
+.login-container .body input[type="text"],.login-container .body input[type="password"] {
+	font-family: 'Poor Story';
+	display: block;
+	width: 70%;
+	height: 20%;
+	max-height: 50px;
+	margin: auto;
+	margin-top: 10%;
+	border-radius: 5px;
+	padding-left: 15px;
+	outline: none;
+	transition: border-color .4s ease-out;
+	border: 4px solid transparent;
+}
+
+.login-container .body input[type="text"]:focus,.login-container .body input[type="password"]:focus{
+	border-color: rgba(25, 118, 210, 0.5) !important;
+}
+
+.login-container .footer{
+	height: 30%;
+}
+
+.login-container .footer .footer-text, .registration-container .footer .footer-text{
+	font-family: 'Poor Story';
+	height: 25%;
+}
+
+.login-container input[type="button"], .registration-container input[type="button"]{
+	font-family: 'Poor Story';
+	padding: 4%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background: #1976d2;
+	color: white;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 5px black;
+	cursor: pointer;
+	transition: box-shadow .4s ease-out;
+	outline: none;
+}
+
+.login-container input[type="submit"]:hover{
+	box-shadow: 2px 2px 10px black;
+}
+
+.login-container .header .close-button-container, .registration-container .header .close-button-container, .parola-uitata-container .header .close-button-container{
+	position: absolute;
+	right: 5px;
+	width: 10%;
+	max-width: 40px;
+}
+
+.login-container .header .close-button-container button, .registration-container .header .close-button-container button, .parola-uitata-container .header .close-button-container button{
+	width: 80%;
+	height: 80%;
+	border: 0;
+	background: transparent;
+	outline: none;
+}
+
+.registration-container{
+	display: none;
+	min-width: 400px;
+	min-height: 490px;
+	height: 70%;
+	width: 35%;
+	background: #e9ebee;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.registration-container .body{
+	height: 65%;
+}
+
+.registration-container .footer{
+	height: 25%;
+}
+
+.registration-table tr{
+	margin-top: 5px;
+	max-height: 50px;
+}
+
+.registration-table td{
+	display: block;
+	width: 60%;
+	height: 90%;
+}
+
+.registration-table td input{
+	font-family: 'Poor Story';
+	width: 100%;
+	height: 100%;
+	max-height: 40px;
+	border-radius: 5px;
+	padding-left: 15px;
+	outline: none;
+	transition: border-color .4s ease-out;
+	border: 4px solid transparent;
+}
+
+.registration-table td input:focus{
+	border-color: rgba(25, 118, 210, 0.5) !important;
+}
+
+.parola-uitata-container{
+	display: none;
+	min-width: 400px;
+	min-height: 250px;
+	height: 30%;
+	width: 35%;
+	background: #e9ebee;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.parola-uitata-container .body{
+	height: 50%;
+}
+
+.parola-uitata-container .footer{
+	height: 40%;
+}
+
+.parola-uitata-container .body input{
+	font-family: 'Poor Story';
+	width: 60%;
+	height: 100%;
+	max-height: 40px;
+	border-radius: 5px;
+	padding-left: 15px;
+	outline: none;
+	transition: border-color .4s ease-out;
+	border: 4px solid transparent;
+}
+
+.parola-uitata-container .body input[type="text"]:focus{
+	border-color: rgba(25, 118, 210, 0.5);
+}
+
+.parola-uitata-container .footer input{
+	padding: 4%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-family: 'Poor Story';
+	color: white;
+	outline: none;
+	background: rgba(25, 118, 210, 1);
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 5px black;
+	transition: box-shadow .4s ease-out;
+}
+
+.parola-uitata-container .footer input:hover{
+	box-shadow: 2px 2px 10px black;
+}

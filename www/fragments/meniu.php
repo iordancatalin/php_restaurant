@@ -1,7 +1,5 @@
 <?php
 	
-	require('classes/db_preparat.php');
-		
 	$page = 1;
 	$elementsPerPage = 4;
 	$indexCategorie = 0;
@@ -42,7 +40,7 @@
 						<span>lei</span>
 					</div>
 					<div class="row m-0 flex-block middle-center add-cart-container">
-						<button type="button">Adauga in cos</button>
+						<button type="button" onclick="adaugaProdusInCos(<?php echo $preparat->id ?>)">Adauga in cos</button>
 					</div>
 				</div>
 				<?php } ?>

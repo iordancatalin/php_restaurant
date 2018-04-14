@@ -104,6 +104,11 @@
 
 .meniu-container .name-container{
 	height: 15%;
+	overflow: hidden;
+}
+
+.meniu-container .name-container:hover{
+	overflow: visible;
 }
 
 .meniu-container .pret-container{

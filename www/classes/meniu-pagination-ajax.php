@@ -1,6 +1,6 @@
 <?php
 	
-	require("db_preparat.php");
+	require('db_preparat.php');
 	
 	$categorie = $_GET["categorie"];
 	$elementsPerPage = $_GET["elementsPerPage"];
